@@ -15,13 +15,17 @@ function areaCalculation(){
     }
 
     else if(orielCheckbox.checked && configurationDropdown.value==='standardSill'){
-        egressArea = (widthClearOp * (ventHeight - systemObject.configurations.oriel.sSillDiscount))/144;
+        let orielVent = (ventHeight - systemObject.configurations.oriel.sSillDiscount).toPrecision(4);
+        egressArea = (widthClearOp * (orielVent))/144;
         console.log(widthClearOp)
         console.log(ventHeight - systemObject.configurations.oriel.sSillDiscount)
+        return [widthClearOp, orielVent, egressArea]
     } else if (orielCheckbox.checked && configurationDropdown.value==='highSill'){
-        egressArea = (widthClearOp * (ventHeight - systemObject.configurations.oriel.hSillDiscount))/144;
+        let orielVent = (ventHeight - systemObject.configurations.oriel.sSillDiscount).toPrecision(4);
+        egressArea = (widthClearOp * (orielVent))/144;
         console.log(widthClearOp)
         console.log(ventHeight - systemObject.configurations.oriel.hSillDiscount)
+        return [widthClearOp, orielVent, egressArea]
 
     }
     else {

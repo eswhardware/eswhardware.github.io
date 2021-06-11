@@ -1,5 +1,47 @@
 const systemInfo = {
 
+    "ES-EL100": {
+        systemType: "Single Hung Window",
+        egress: true,
+        configurations: {standardSill: {heightDiscount: 6.06,
+                                        widthDiscount: 5.625,
+                                        widthDivider: 1,
+                                        heightDivider: 2,},
+                                        
+                         highSill: {heightDiscount: 6.248,
+                                    widthDiscount: 5.625,
+                                    widthDivider: 1,
+                                    heightDivider: 2,},
+                                    
+                            oriel:{sSillDiscount: 7.152,
+                                    hSillDiscount: 7.527,
+                                   widthDiscount: 5.625,
+                                   widthDivider: 1,
+                                   heightDivider: 2}} 
+
+    },
+
+    "ES-H340": {
+        systemType: "Single Hung Window",
+        egress: true,
+        configurations: {standardSill: {heightDiscount: 7.75,
+                                        widthDiscount: 6.375,
+                                        widthDivider: 1,
+                                        heightDivider: 2,},
+                                        
+                         leg: {heightDiscount: 8.25,
+                                    widthDiscount: 7.375,
+                                    widthDivider: 1,
+                                    heightDivider: 2,},
+                                    
+                            oriel:{sSillDiscount: 7.875,
+                                    hSillDiscount: 7.875,
+                                   widthDiscount: 6.375,
+                                   widthDivider: 1,
+                                   heightDivider: 1}} 
+
+    },
+
     "ES-1000": {
         systemType: "Single Hung Window",
         egress: true,
@@ -69,6 +111,20 @@ const systemInfo = {
                                 widthDiscount: 6,                                
                                 widthDivider: 1,
                                 heightDivider: 2}}  
+    },
+
+    "ES-EL200": {
+        systemType: "Horizontal Sliding Window",
+        egress: true,       
+        configurations: {"OX/XO": {heightDiscount: 6.125,
+                                   widthDiscount: 8.25,                        
+                                   widthDivider: 2,
+                                   heightDivider: 1},                                   
+                            "XOX": {heightDiscount: 6.125,
+                                    widthDiscount: 3.875,                                    
+                                    widthDivider: 3,
+                                    heightDivider: 1}       
+                        }                        
     },
 
     "ES-2000": {
@@ -183,6 +239,171 @@ const systemInfo = {
                         }                        
     },
 
+    "ES-4000": {
+        systemType: "Horizontal Sliding Window",
+        accessibility: true,       
+        configurations: {"OX/XO": {heightDiscount: 1,
+                                   widthDiscount: 5.5,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1}, 
+                                   
+                        "XX": {heightDiscount: 1,
+                                    widthDiscount: 7.75,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+
+                        "OXO": {heightDiscount: 1,
+                            widthDiscount: 5.9583,                    
+                            widthDivider: 3,
+                            heightDivider: 1},    
+                        
+                        "OXXO": {heightDiscount: 1,
+                            widthDiscount: 10.875,                    
+                            widthDivider: 2,
+                            heightDivider: 1}                                
+                        }                        
+    },
+
+    "ES-6000": {
+        systemType: "Horizontal Sliding Window",
+        accessibility: true,       
+        configurations: {"OX/XO": {heightDiscount: 1,
+                                   widthDiscount: 6,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1}, 
+                                   
+                        "XX": {heightDiscount: 1,
+                                    widthDiscount: 9.3125,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+
+                        "OXO": {heightDiscount: 1,
+                            widthDiscount: 6.125,                    
+                            widthDivider: 3,
+                            heightDivider: 1},    
+                        
+                        "OXXO": {heightDiscount: 1,
+                            widthDiscount: -10.875,                    
+                            widthDivider: 4,
+                            heightDivider: 1}                                
+                        }                        
+    },
+
+    "ES-6500": {
+        systemType: "Horizontal Sliding Window",
+        accessibility: true,       
+        configurations: {"OX/XO - INTUITION HANDLE": {heightDiscount: 1,
+                                   widthDiscount: 8.75,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1}, 
+
+                        "OX/XO - INVOLUTE HANDLE": {heightDiscount: 1,
+                                    widthDiscount: 10.75,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+         
+                        "XOX - INTUITION HANDLE": {heightDiscount: 1,
+                            widthDiscount: 8.3125,                    
+                            widthDivider: 3,
+                            heightDivider: 1},
+                            
+                        "XOX - INVOLUTE HANDLE": {heightDiscount: 1,
+                            widthDiscount: 10.375,                    
+                            widthDivider: 3,
+                            heightDivider: 1},  
+                        
+                        "OXXO - INTUITION HANDLE": {heightDiscount: 1,
+                            widthDiscount: 15.5,                    
+                            widthDivider: 2,
+                            heightDivider: 1},                            
+                    
+                        "OXXO - INVOLUTE HANDLE": {heightDiscount: 1,
+                            widthDiscount: -17.5625,                    
+                            widthDivider: 2,
+                            heightDivider: 1}
+                        }                        
+    },
+
+    "RC-2400ST": {
+        systemType: "Horizontal Sliding Window",
+        accessibility: true,       
+        configurations: {"OX/XO - INVOLUTE HANDLE": {heightDiscount: 1,
+                                    widthDiscount: 8,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+         
+                        "OXO - INVOLUTE HANDLE": {heightDiscount: 1,
+                            widthDiscount: 7.5,                    
+                            widthDivider: 3,
+                            heightDivider: 1},  
+                   
+                        "OXXO - INVOLUTE HANDLE": {heightDiscount: 1,
+                            widthDiscount: 13.8125,                    
+                            widthDivider: 2,
+                            heightDivider: 1}
+                        }                        
+    },
+
+    "RC-DM12": {
+        systemType: "Horizontal Sliding Window",
+        accessibility: true,       
+        configurations: {"OX/XO - INVOLUTE HANDLE": {heightDiscount: 1,
+                                    widthDiscount: 8.0625,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+         
+                        "OXO - INVOLUTE HANDLE": {heightDiscount: 1,
+                            widthDiscount: 9.5625,                    
+                            widthDivider: 3,
+                            heightDivider: 1},  
+                   
+                        "OXXO - INVOLUTE HANDLE": {heightDiscount: 1,
+                            widthDiscount: 12.875,                    
+                            widthDivider: 2,
+                            heightDivider: 1},
+
+                        "OX/XO - CREST HANDLE": {heightDiscount: 1,
+                            widthDiscount: 7,                    
+                            widthDivider: 2,
+                            heightDivider: 1},
+     
+                        "OXO - CREST HANDLE": {heightDiscount: 1,
+                            widthDiscount: 6.5,                    
+                            widthDivider: 3,
+                            heightDivider: 1},  
+                
+                        "OXXO - CREST HANDLE": {heightDiscount: 1,
+                            widthDiscount: 11.8125,                    
+                            widthDivider: 2,
+                            heightDivider: 1}
+                            }                        
+    },
+
+    "ES-EL400": {
+        systemType: "Horizontal Sliding Window",
+        accessibility: true,       
+        configurations: {"OX/XO": {heightDiscount: 1,
+                                   widthDiscount: 7.3125,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1}, 
+                                   
+                        "XX": {heightDiscount: 1,
+                                    widthDiscount: 9.5938,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+
+                        "OXO": {heightDiscount: 1,
+                            widthDiscount: 9.75,                    
+                            widthDivider: 3,
+                            heightDivider: 1},    
+                        
+                        "OXXO": {heightDiscount: 1,
+                            widthDiscount: 12.3125,                    
+                            widthDivider: 2,
+                            heightDivider: 1}                                
+                        }                        
+    },
+
     "ES-5000": {
         systemType: "Project Window",
         egress: true,
@@ -195,6 +416,56 @@ const systemInfo = {
                                widthDiscount: 6.4375,
                                widthDivider: 2,
                                heightDivider: 1}}  
+    },
+
+    "ES-P252": {
+        systemType: "Project Window",
+        egress: true,
+        configurations: {"CASEMENT X": {heightDiscount: 4.6875,
+                               widthDiscount: 6,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                    
+                        "RECEPTOR X": {heightDiscount: 9.375,
+                               widthDiscount: 9.9375,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                        
+                        "CASEMENT FLANGE X": {heightDiscount: 5.6875,
+                                widthDiscount: 7,
+                                widthDivider: 1,
+                                heightDivider: 1},
+
+                        "CASEMENT XX": {heightDiscount: 4.6875,
+                            widthDiscount: 5.75,
+                            widthDivider: 2,
+                            heightDivider: 1},
+                    
+                        "RECEPTOR XX": {heightDiscount: 9.375,
+                            widthDiscount: 7.6875,
+                            widthDivider: 2,
+                            heightDivider: 1},
+                        
+                        "CASEMENT FLANGE XX": {heightDiscount: 5.6875,
+                                widthDiscount: 6.25,
+                                widthDivider: 2,
+                                heightDivider: 1},
+                            }  
+    },
+
+    "ES-3000": {
+        systemType: "Swing Door",
+        accessibility: true,
+        configurations: {"X": {heightDiscount: 0,
+                               widthDiscount: 6,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                    
+                        "XX": {heightDiscount: 0,
+                               widthDiscount: 4.250,
+                               widthDivider: 2,
+                               heightDivider: 1}
+                        }  
     },
 
     "ES-9000": {
@@ -221,53 +492,85 @@ const systemInfo = {
                                 heightDivider: 1}}  
     },
 
+    "ES-9100": {
+        systemType: "Swing Door",
+        accessibility: true,
+        configurations: {"X": {heightDiscount: 0,
+                               widthDiscount: 5.25,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                    
+                        "XX": {heightDiscount: 0,
+                               widthDiscount: 4.375,
+                               widthDivider: 2,
+                               heightDivider: 1}
+                        }  
+    },
 
-    // "ES-EL100": {
-    //     systemType: "Single Hung Window",
-    //     egress: true,
-    //     configurations: {standardSill: {heightDiscount: 7.9375,
-    //                                     widthDiscount: 5.625,
-    //                                     minFrameWidth: 20 + 5.625,
-    //                                     widthDivider: 1,
-    //                                     heightDivider: 2,},
-                                        
-    //                      highSill: {heightDiscount: 8.125,
-    //                                 widthDiscount: 5.625,
-    //                                 minFrameWidth: 20 + 5.625,
-    //                                 widthDivider: 1,
-    //                                 heightDivider: 2,},
-                                    
-    //                         oriel:{hSillDiscount: 8.125,
-    //                                sSillDiscount: ,
-    //                                widthDiscount: 5.625,
-    //                                minFrameWidth: 20 + 5.625,
-    //                                widthDivider: 1,
-    //                                heightDivider: 2}} 
+    "ES-21": {
+        systemType: "Swing Door",
+        accessibility: true,
+        configurations: {"X": {heightDiscount: 0,
+                               widthDiscount: 6.5,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                    
+                        "XX": {heightDiscount: 0,
+                               widthDiscount: 4.5,
+                               widthDivider: 2,
+                               heightDivider: 1}
+                        }  
+    },
 
-    // },
+    "ES-35": {
+        systemType: "Swing Door",
+        accessibility: true,
+        configurations: {"X": {heightDiscount: 0,
+                               widthDiscount: 6.875,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                    
+                        "XX - WITH ASTRAGAL": {heightDiscount: 0,
+                               widthDiscount: 4.375,
+                               widthDivider: 2,
+                               heightDivider: 1},
+                        
+                        "XX - WITH ASTRAGAL": {heightDiscount: 0,
+                            widthDiscount: 4.875,
+                            widthDivider: 2,
+                            heightDivider: 1}
+                     } 
+    },
 
-    // "ES-EL200": {
-    //     systemType: "Horizontal Sliding Window",
-    //     egress: true,       
-    //     configurations: {"OX/XO": {heightDiscount: 6.125,
-    //                                widthDiscount: 8.25,
-    //                                minFrameWidth: 20 + 8.25,
-    //                                widthDivider: 2,
-    //                                heightDivider: 1},                                   
-    //                         "XOX": {heightDiscount: 6.125,
-    //                                 widthDiscount: 3.875,
-    //                                 minFrameWidth: 20 + 3.875,
-    //                                 widthDivider: 3,
-    //                                 heightDivider: 1}       
-    //                     }                        
-    // },
+    "ES-46T": {
+        systemType: "Swing Door",
+        accessibility: true,
+        configurations: {"X": {heightDiscount: 0,
+                               widthDiscount: 7.213,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                    
+                        "XX": {heightDiscount: 0,
+                               widthDiscount: 6,
+                               widthDivider: 2,
+                               heightDivider: 1}
+                        }  
+    },
 
-    // "ES-H340": {
-    //     systemType: "Single Hung Window",
-    //     egress: true,
-    // },
-
-    
+    "ES-EL300": {
+        systemType: "Swing Door",
+        accessibility: true,
+        configurations: {"X": {heightDiscount: 0,
+                               widthDiscount: 6.5,
+                               widthDivider: 1,
+                               heightDivider: 1},
+                    
+                        "XX": {heightDiscount: 0,
+                               widthDiscount: 4.625,
+                               widthDivider: 2,
+                               heightDivider: 1}
+                        }  
+    }
 }
 
 // module.exports =  systemInfo;

@@ -54,7 +54,5 @@ calculateButton.addEventListener('click', () => {
         document.querySelector('#widthClearOpMessage').textContent = `Width Clear Opening: ${widthClearOp}"`
         document.querySelector('#heightClearOpMessage').textContent = `Height Clear Opening: ${heightClearOp}"`
     }
-    // calculateButton.disabled = true;
-    // newCalculationButton.disabled = false;
 })
 
