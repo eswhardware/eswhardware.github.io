@@ -1,0 +1,15 @@
+* {
+    font-family: Calibri;
+}
+h1 {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+div {
+    line-height: 2
+}
+
+.oriel, .highsill {
+    display: none;
+}
