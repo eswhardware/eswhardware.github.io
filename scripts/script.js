@@ -16,11 +16,17 @@ dropDownElement.addEventListener('change', () => {
         }
 
         //check if system has high sill property
-        if (configurationsObject.highsill){
-            highsill.style.display = 'inline'
-        }
-        else {
-            highsill.style.display = 'none';
+        // if (configurationsObject.highsill){
+        //     highsill.style.display = 'inline'
+        // }
+        // else {
+        //     highsill.style.display = 'none';
+        // }
+
+        if (systemObject.accessibility){
+            const height = document.getElementById('unit-height');
+            height.disabled = true;
+            console.log('disable')
         }
     } catch(e) {
         console.log(e)

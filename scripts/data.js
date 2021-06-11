@@ -186,15 +186,39 @@ const systemInfo = {
     "ES-5000": {
         systemType: "Project Window",
         egress: true,
-        configurations: {"X": {heightDiscount: 6.25,
-                               widthDiscount: 6,
+        configurations: {"X": {heightDiscount: 6,
+                               widthDiscount: 7.0625,
                                widthDivider: 1,
-                               heightDivider: 2},
+                               heightDivider: 1},
                     
-                        "XX": {heightDiscount: 8.94,
-                               widthDiscount: 6,
+                        "XX": {heightDiscount: 6,
+                               widthDiscount: 6.4375,
+                               widthDivider: 2,
+                               heightDivider: 1}}  
+    },
+
+    "ES-9000": {
+        systemType: "Swing Door",
+        accessibility: true,
+        configurations: {"X": {heightDiscount: 0,
+                               widthDiscount: 8.375,
                                widthDivider: 1,
-                               heightDivider: 2}}  
+                               heightDivider: 1},
+                    
+                        "XX": {heightDiscount: 0,
+                               widthDiscount: 6,
+                               widthDivider: 2,
+                               heightDivider: 1},
+
+                        "X - ES-8000 FRAME": {heightDiscount: 0,
+                        widthDiscount: 6.8775,
+                        widthDivider: 1,
+                        heightDivider: 1},
+                     
+                         "XX - ES-8000 FRAME": {heightDiscount: 0,
+                                widthDiscount: 5.25,
+                                widthDivider: 2,
+                                heightDivider: 1}}  
     },
 
 
