@@ -13,7 +13,7 @@
     <div>
         <h1>Egress Calulator</h1>
     </div>
-    <!-- <form> -->
+    <form>
         <div>
             <label for="product-line">Select a product line: </label>
             <select name="product-line" id="sistemas" >
@@ -43,12 +43,18 @@
             </div>       
             
         </div>
+            <input type="reset" id="newCalculation" value="New Calculation"></input>
+        </form>
         <div>
-            <button>Calculate</button>
+        
+            <button id="calculate">Calculate</button>
         </div>
-    <!-- </form> -->
+            
+    
         <div>
             <h2 id="calculation-result"></h2>
+            <h2 id="widthClearOpMessage"></h2>
+            <h2 id="heightClearOpMessage"></h2>
         </div>
     
     <script src="scripts/helper-functions.js"></script>

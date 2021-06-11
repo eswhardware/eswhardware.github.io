@@ -5,6 +5,7 @@ const orielCheckbox = document.getElementById('oriel-checkbox');
 const ventHeightTextbox = document.getElementById('vent-height');
 const calculateButton = document.querySelector('button');
 const highSillCheckbox = document.getElementById('highsill-checkbox')
+const newCalculationButton = document.querySelector('#newCalculation')
 
 function populateDropdown() {
     for (let system of Object.keys(systemInfo)){
@@ -31,4 +32,9 @@ function resetDefault(htmlElement){
     while (htmlElement.length > 0){
         htmlElement.remove(0)
     }
+}
+
+function test(){
+    newCalculationButton.disabled = true;
+    calculateButton.disabled = false;
 }

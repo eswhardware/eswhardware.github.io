@@ -1,6 +1,5 @@
 dropDownElement.addEventListener('change', () => {
     const oriel = document.querySelector('.oriel')
-    const highsill = document.querySelector('.highsill')
     const systemObject = systemInfo[dropDownElement.value];
     const configurationsObject = systemObject.configurations;
 
@@ -15,18 +14,11 @@ dropDownElement.addEventListener('change', () => {
             oriel.style.display = 'none';
         }
 
-        //check if system has high sill property
-        // if (configurationsObject.highsill){
-        //     highsill.style.display = 'inline'
-        // }
-        // else {
-        //     highsill.style.display = 'none';
-        // }
-
         if (systemObject.accessibility){
-            const height = document.getElementById('unit-height');
-            height.disabled = true;
-            console.log('disable')
+            document.getElementById('unit-height').disabled = true;
+        } 
+        else {
+            document.getElementById('unit-height').disabled = false;
         }
     } catch(e) {
         console.log(e)
@@ -46,12 +38,23 @@ orielCheckbox.addEventListener('change', () => {
 })
 
 calculateButton.addEventListener('click', () => {
-    const area = areaCalculation().toPrecision(4);
+    const [widthClearOp, heightClearOp, area] = areaCalculation();
     console.log(area)
-    if(area > 5.7){
+    if (!area){
+        document.querySelector('#widthClearOpMessage').textContent = (widthClearOp < 32) ?  
+        `Does not meet accessibility. Width Clear Opening: ${widthClearOp}"`:`Meets accessibility. Width Clear Opening: ${widthClearOp}"`;
+         }
+    else if(area > 5.7){
         document.querySelector('h2').textContent = `Area is: ${area} sqft Compliance with Egress`
+        document.querySelector('#widthClearOpMessage').textContent = `Width Clear Opening: ${widthClearOp}"`
+        document.querySelector('#heightClearOpMessage').textContent = `Height Clear Opening: ${heightClearOp}"`
     }
     else {
         document.querySelector('h2').textContent = `Area is: ${area} sqft NON Compliance with Egress`
+        document.querySelector('#widthClearOpMessage').textContent = `Width Clear Opening: ${widthClearOp}"`
+        document.querySelector('#heightClearOpMessage').textContent = `Height Clear Opening: ${heightClearOp}"`
     }
+    // calculateButton.disabled = true;
+    // newCalculationButton.disabled = false;
 })
+
