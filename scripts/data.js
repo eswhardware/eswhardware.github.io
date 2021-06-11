@@ -324,6 +324,71 @@ const systemInfo = {
                         }                        
     },
 
+    "ES-EL400": {
+        systemType: "Horizontal Sliding Window",
+        accessibility: true,       
+        configurations: {"OX/XO": {heightDiscount: 1,
+                                   widthDiscount: 7.3125,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1}, 
+                                   
+                        "XX": {heightDiscount: 1,
+                                    widthDiscount: 9.5938,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+
+                        "OXO": {heightDiscount: 1,
+                            widthDiscount: 9.75,                    
+                            widthDivider: 3,
+                            heightDivider: 1},    
+                        
+                        "OXXO": {heightDiscount: 1,
+                            widthDiscount: 12.3125,                    
+                            widthDivider: 2,
+                            heightDivider: 1}                                
+                        }                        
+    },
+
+    "ES-SW340": {
+        systemType: "Horizontal Sliding Window",
+        egress: true,       
+        configurations: {"OX/XO - STANDARD SILL": {heightDiscount: 7.75,
+                                   widthDiscount: 6.75,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1}, 
+                                   
+                        "OX/XO - FLANGE": {heightDiscount: 8.75,
+                                    widthDiscount: 7.25,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+
+                        "XOX": {heightDiscount: 6.8125,
+                            widthDiscount: 5.1875,                    
+                            widthDivider: 3,
+                            heightDivider: 1}                                    
+                        }                        
+    },
+
+    "RC-HR2600": {
+        systemType: "Horizontal Sliding Window",
+        egress: true,       
+        configurations: {"OX/XO": {heightDiscount: 5.25,
+                                   widthDiscount: 8.936,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1}, 
+                                   
+                        "XOX": {heightDiscount: 5.25,
+                                    widthDiscount: 23.5,                    
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+
+                        "XOX - UNEQUAL": {heightDiscount: 5.25,
+                            widthDiscount: 16.979,                    
+                            widthDivider: 3,
+                            heightDivider: 1}                                    
+                        }                        
+    },
+
     "RC-2400ST": {
         systemType: "Horizontal Sliding Window",
         accessibility: true,       
@@ -377,31 +442,6 @@ const systemInfo = {
                             widthDivider: 2,
                             heightDivider: 1}
                             }                        
-    },
-
-    "ES-EL400": {
-        systemType: "Horizontal Sliding Window",
-        accessibility: true,       
-        configurations: {"OX/XO": {heightDiscount: 1,
-                                   widthDiscount: 7.3125,                    
-                                   widthDivider: 2,
-                                   heightDivider: 1}, 
-                                   
-                        "XX": {heightDiscount: 1,
-                                    widthDiscount: 9.5938,                    
-                                    widthDivider: 2,
-                                    heightDivider: 1},
-
-                        "OXO": {heightDiscount: 1,
-                            widthDiscount: 9.75,                    
-                            widthDivider: 3,
-                            heightDivider: 1},    
-                        
-                        "OXXO": {heightDiscount: 1,
-                            widthDiscount: 12.3125,                    
-                            widthDivider: 2,
-                            heightDivider: 1}                                
-                        }                        
     },
 
     "ES-5000": {
