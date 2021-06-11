@@ -109,6 +109,82 @@ const systemInfo = {
                             heightDivider: 1}
                         }                        
     },
+
+    "ES-2050": {
+        systemType: "Horizontal Sliding Window",       
+        configurations: {"OX/XO - STD SILL": {heightDiscount: 6.8125,
+                                   widthDiscount: 4.8125,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1},    
+
+                        "OX/XO - HIGH SILL": {heightDiscount: 7.25,
+                                    widthDiscount: 4.8125,
+                                    widthDivider: 2,
+                                    heightDivider: 1},
+
+                        "XOX - STD SILL": {heightDiscount: 6.8125,
+                                    widthDiscount: 5.875,                                   
+                                    widthDivider: 3,
+                                    heightDivider: 1},
+                                    
+                        "XOX - HIGH SILL": {heightDiscount: 7.25,
+                            widthDiscount: 5.875,                                   
+                            widthDivider: 3,
+                            heightDivider: 1},
+
+                        "XOX [1/4-1/2-1/4] - STD SILL": {heightDiscount: 6.8125,
+                            widthDiscount: 2.375,                                   
+                            widthDivider: 4,
+                            heightDivider: 1},
+                                    
+                        "XOX [1/4-1/2-1/4] - HIGH SILL": {heightDiscount: 7.25,
+                            widthDiscount: 2.375,                                   
+                            widthDivider: 4,
+                            heightDivider: 1}
+                        }                        
+    },
+
+    "ES-2100": {
+        systemType: "Horizontal Sliding Window",       
+        configurations: {"OX/XO - STD SILL": {heightDiscount: 7.25,
+                                   widthDiscount: 4.5625,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1},    
+
+                        "XOX - STD SILL": {heightDiscount: 7.25,
+                                    widthDiscount: 5.1875,                                   
+                                    widthDivider: 3,
+                                    heightDivider: 1},                                
+
+                        "XOX [1/4-1/2-1/4] - STD SILL": {heightDiscount: 7.25,
+                            widthDiscount: 2.625,                                   
+                            widthDivider: 4,
+                            heightDivider: 1},
+                                
+                        }                        
+    },
+
+    "ES-2150": {
+        systemType: "Horizontal Sliding Window",       
+        configurations: {"OX/XO - STD SILL": {heightDiscount: 7.25,
+                                   widthDiscount: 4.8125,                    
+                                   widthDivider: 2,
+                                   heightDivider: 1},    
+
+                        "XOX - STD SILL": {heightDiscount: 7.25,
+                                    widthDiscount: 5.875,                                   
+                                    widthDivider: 3,
+                                    heightDivider: 1},                                
+
+                        "XOX [1/4-1/2-1/4] - STD SILL": {heightDiscount: 7.25,
+                            widthDiscount: 2.375,                                   
+                            widthDivider: 4,
+                            heightDivider: 1},
+                                
+                        }                        
+    },
+
+
     // "ES-EL100": {
     //     systemType: "Single Hung Window",
     //     configurations: {standardSill: {heightDiscount: 7.9375,
