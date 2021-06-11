@@ -20,8 +20,9 @@ function areaCalculation(){
         console.log(widthClearOp)
         console.log(ventHeight - systemObject.configurations.oriel.sSillDiscount)
         return [widthClearOp, orielVent, egressArea]
-    } else if (orielCheckbox.checked && configurationDropdown.value==='highSill'){
-        let orielVent = (ventHeight - systemObject.configurations.oriel.sSillDiscount).toPrecision(4);
+
+    } else if (orielCheckbox.checked && configurationDropdown.value!=='standardSill'){
+        let orielVent = (ventHeight - systemObject.configurations.oriel.hSillDiscount).toPrecision(4);
         egressArea = (widthClearOp * (orielVent))/144;
         console.log(widthClearOp)
         console.log(ventHeight - systemObject.configurations.oriel.hSillDiscount)
