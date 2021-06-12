@@ -10,9 +10,10 @@
    
 </head>
 <body  onload="populateDropdown()">
-    <div>
-        <h1>Egress Calulator</h1>
-    </div>
+    <header id='banner'>
+        <!-- <img src="resources/CIENERGIASOLARSAS.jpg" alt="" srcset=""> -->
+        <h1>Egress Calculator</h1>
+    </header>
     <form>
         <div>
             <label for="product-line">Select a product line: </label>
@@ -45,17 +46,23 @@
         </div>
             <!-- <input type="reset" id="newCalculation" value="New Calculation"></input> -->
         </form>
-        <div>
+        <div class="calculatebutton">
         
             <button id="calculate">Calculate</button>
         </div>
             
     
-        <div>
-            <h2 id="calculation-result"></h2>
-            <h2 id="widthClearOpMessage"></h2>
-            <h2 id="heightClearOpMessage"></h2>
+        <div id = "message">
+            <h2 class="calculation-result"></h2>
+            <h2 class="widthClearOpMessage"></h2>
+            <h2 class="heightClearOpMessage"></h2>
+            <h2 class="meet-egress"></h2>
         </div>
+        <footer>
+            <p>By: A.Manotas</p>
+        </footer>
+
+        
     
     <script src="scripts/helper-functions.js"></script>
     <script src="scripts/script.js"></script>    

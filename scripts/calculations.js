@@ -11,12 +11,14 @@ function areaCalculation(){
     const heightClearOp = ((height/configuration.heightDivider) - configuration.heightDiscount).toPrecision(4);
     let egressArea = 0;
     if (systemObject.accessibility){
+        console.log([widthClearOp, heightClearOp])
         return [widthClearOp, heightClearOp];
     }
 
     else if(orielCheckbox.checked && configurationDropdown.value==='standardSill'){
         let orielVent = (ventHeight - systemObject.configurations.oriel.sSillDiscount).toPrecision(4);
         egressArea = (widthClearOp * (orielVent))/144;
+        egressArea = egressArea.toPrecision(4);
         console.log(widthClearOp)
         console.log(ventHeight - systemObject.configurations.oriel.sSillDiscount)
         return [widthClearOp, orielVent, egressArea]
@@ -24,6 +26,7 @@ function areaCalculation(){
     } else if (orielCheckbox.checked && configurationDropdown.value!=='standardSill'){
         let orielVent = (ventHeight - systemObject.configurations.oriel.hSillDiscount).toPrecision(4);
         egressArea = (widthClearOp * (orielVent))/144;
+        egressArea = egressArea.toPrecision(4);
         console.log(widthClearOp)
         console.log(ventHeight - systemObject.configurations.oriel.hSillDiscount)
         return [widthClearOp, orielVent, egressArea]

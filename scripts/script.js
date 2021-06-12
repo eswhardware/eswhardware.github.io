@@ -14,12 +14,14 @@ dropDownElement.addEventListener('change', () => {
             oriel.style.display = 'none';
         }
 
-        if (systemObject.accessibility){
-            document.getElementById('unit-height').disabled = true;
-        } 
-        else {
-            document.getElementById('unit-height').disabled = false;
-        }
+        document.querySelector('.calculation-result').textContent = "";
+        document.querySelector('.widthClearOpMessage').textContent = "";
+        document.querySelector('.heightClearOpMessage').textContent =  "";
+        document.querySelector('.meet-egress').textContent = "";
+        ventHeightTextbox.textContent = "";
+        document.getElementById('unit-width').value = "";
+        document.getElementById('unit-height').value = "";
+
     } catch(e) {
         console.log(e)
     }
@@ -39,20 +41,34 @@ orielCheckbox.addEventListener('change', () => {
 
 calculateButton.addEventListener('click', () => {
     const [widthClearOp, heightClearOp, area] = areaCalculation();
-    console.log(area)
+    console.log(area);
     if (!area){
-        document.querySelector('#widthClearOpMessage').textContent = (widthClearOp < 32) ?  
-        `Does not meet accessibility. Width Clear Opening: ${widthClearOp}"`:`Meets accessibility. Width Clear Opening: ${widthClearOp}"`;
+        document.querySelector('.widthClearOpMessage').textContent = (widthClearOp < 32) ?  
+        `Does not meet accessibility. Width Clear Opening: ${widthClearOp}" is less than 32"`
+        :`Meets accessibility. Clear Opening: W ${widthClearOp}" x H ${heightClearOp}`;
          }
-    else if(area > 5.7){
-        document.querySelector('h2').textContent = `Area is: ${area} sqft Compliance with Egress`
-        document.querySelector('#widthClearOpMessage').textContent = `Width Clear Opening: ${widthClearOp}"`
-        document.querySelector('#heightClearOpMessage').textContent = `Height Clear Opening: ${heightClearOp}"`
-    }
+
+    else if(area > 5.7 & widthClearOp >= 20 & heightClearOp >= 24 ){
+        document.querySelector('.calculation-result').textContent = `Egress Area is: ${area}sqft`
+        document.querySelector('.widthClearOpMessage').textContent = `Width Clear Opening: ${widthClearOp}"`
+        document.querySelector('.heightClearOpMessage').textContent = `Height Clear Opening: ${heightClearOp}"`
+        document.querySelector('.meet-egress').textContent = 'Compliance with Egress'
+        document.querySelector('.meet-egress').style.color = 'green';
+        }
+
     else {
-        document.querySelector('h2').textContent = `Area is: ${area} sqft NON Compliance with Egress`
-        document.querySelector('#widthClearOpMessage').textContent = `Width Clear Opening: ${widthClearOp}"`
-        document.querySelector('#heightClearOpMessage').textContent = `Height Clear Opening: ${heightClearOp}"`
-    }
+        document.querySelector('.calculation-result').textContent = (area < 5.7) ? `Egress Area is ${area}sqft which is less than 5.7sqft`:`Egress Area is: ${area}sqft`;
+        document.querySelector('.widthClearOpMessage').textContent = (widthClearOp < 20) ? `Width Clear Opening is ${widthClearOp}" which is less than 20"`: `Width Clear Opening is ${widthClearOp}"`
+        document.querySelector('.heightClearOpMessage').textContent = (heightClearOp < 24) ? `Height Clear Opening is ${heightClearOp}" which is less than 24"`:`Height Clear Opening: ${heightClearOp}"`
+        document.querySelector(".meet-egress").textContent = 'NON Compliance with Egress'
+        document.querySelector('.meet-egress').style.color = 'red';
+       }  
+       
+    document.querySelector('.calculation-result').style.color = (area < 5.7) ? 'red':'green';
+    document.querySelector('.widthClearOpMessage').style.color = (widthClearOp < 20) ? 'red':'green';        
+    document.querySelector('.heightClearOpMessage').style.color = (heightClearOp < 24) ? 'red':'green';
+    
 })
+
+
 
