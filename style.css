@@ -1,27 +1,35 @@
 * {
     font-family: Calibri;
-    /* font-size: 110% */
+    color: #333435;
+    max-width:1300px;
+    margin: 0 auto;
+    /* font-size: 100% */
 }
 
 body {
-    /* margin: 0 30%; */
-    /* width: 50%; */
-    width: 500px;
-    border: 1px solid black;
-}
-header {
-    border: 1px solid black;
-    }
-h1 {
-    /* background-color: rgb(42, 171, 245); */
     text-align: center;
-    padding: 20px 0;
-    font-size: 150%;
     margin: 0 auto;
+    border: 1px solid black
+}
+
+header {
+    background-color: #80BCE1;
+    /* padding: 1px; */
+    border: 1px solid black;
+    margin: -1px;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #80BCE1;
 }
 
 div {
     line-height: 2;
+    /* border: 1px solid black; */
+    padding: 2px;
+    
 }
 
 .oriel, .highsill {
@@ -30,39 +38,28 @@ div {
 
 div#message {
     line-height: 1;
-}
-
-footer {
-    color: rgba(0,0,0,0.3)
-}
-
-img {
-    height: 10em;
-    width: 10em;
-    /* border: 1px solid black; */
-    /* display: block; */
-    ;
-}
-
-header#banner {
-    background-color: rgb(42, 171, 245);
-    /* display: flex; */
-    padding: 2px;
+    margin: 4px;
 }
 
 form { 
-    padding-top: 10px;
-    padding-left: 10px;
-    line-height: 2px;
+    /* padding-top: 10px;
+    padding-left: 10px; */
+    line-height: 2px;   
 }
 
 button#calculate:hover {
-    background-color: rgb(42, 171, 245);
+    background-color: #80BCE1;
     
 }
 
-.calculatebutton {
-    padding-left: 10px;
+div.calculatebutton {
+    width: 10%;
+    height: 20%;
+}
+
+button {
+    width: 80%;
+    height: 100%;
 }
 
 label { 
